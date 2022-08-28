@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
     font-size: 110%;
     background-color: #b3e4b1; 
+    background-image: url(https://github.com/Nay-Deen/Resume7complete/blob/main/css/backgroundimage.jpg?raw=true);
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -118,11 +119,11 @@ body {
     border-radius: 50%;
   }
   /* Testing background */
- body{ 
-   background-image: url(../resume7/css/backgroundimage.jpg);
+ /* body{  */
+   /* background-image: url(../resume7/css/backgroundimage.jpg); */
   
- } 
- 
+ /* }  */
+
 /* Css animation hover Icon */
  .phone-icon:hover {
     text-shadow: 0px 0px 6px #b3e4b1;
