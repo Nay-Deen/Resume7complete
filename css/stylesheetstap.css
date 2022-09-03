@@ -83,8 +83,9 @@ img {
 /* First thing you see */
 
 #firstpage { 
-    background-image: url();
+    background-image: url(https://github.com/Nay-Deen/Resume7complete/blob/main/css/firstimagehomeface.png?raw=true);
     background-position: center;
-    background-size: cover;
-
+    background-repeat: no-repeat;
+    
 }
+
