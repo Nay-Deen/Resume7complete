@@ -59,23 +59,15 @@ img {
 
 @media (min-width: 992px) {
    .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
-
-@media (min-width: 992px) {
-  .navbar-expand-lg
-  .navbar-nav .nav-link {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
 
 .navbar .navbar-nav .nav-link {
-    font-weight: 500;
-    color:#034b5a
+    font-weight:700,bold;
+    color:#034b5a;
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -83,15 +75,15 @@ img {
 }
 
 .navbar-brand {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     color: #07191d;
 }
 
 /* First thing you see */
 
-#Firstpage { 
-    background-image: url();
+#firstpage { 
+    background-image: url(../Resume7/css/firstimagehome.png);
     background-position: center;
     background-size: cover;
 
