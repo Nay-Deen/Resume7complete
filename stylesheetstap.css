@@ -1,0 +1,98 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=PT+Serif:wght@400;700&display=swap");
+/* reference for color etc */
+:root {
+  --brand-color: #184d01;
+  --c-dark: #034b5a;
+  --c-body: #2f4858;
+  --f-main: "Merriweather", sans-serif;
+  --transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --shadow: 0px 15px 40px rgba(0, 0, 0, 0, 1);
+}
+
+/* reset and helpers */
+body {
+  font-family: var(--f-main);
+  color: var(--c-body);
+  line-height: 1.7;
+}
+
+h1,
+.h,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 700;
+  color: var(--c-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-dark);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--brand-color);
+}
+
+img {
+  width: 100%;
+}
+
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/* Navigation bar */
+.navbar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+   .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .navbar-expand-lg
+  .navbar-nav .nav-link {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.navbar .navbar-nav .nav-link {
+    font-weight: 500;
+    color:#034b5a
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #184d01
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: #07191d;
+}
+
+/* First thing you see */
+
+#Firstpage { 
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+
+}
