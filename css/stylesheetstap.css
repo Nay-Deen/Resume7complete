@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=PT+Serif:wght@400;700&display=swap");
 /* reference for color etc */
 :root {
-  --brand-color: #184d01;
+  --brand-color: #0084a7;
   --c-dark: #034b5a;
   --c-body: #2f4858;
   --f-main: "Merriweather", sans-serif;
@@ -15,6 +15,7 @@ body {
   font-family: var(--f-main);
   color: var(--c-body);
   line-height: 1.7;
+  background-color:#E9FDFF;
 }
 
 h1,
@@ -78,8 +79,6 @@ img {
 
 }
 .navbar.scrolled { 
-    padding-top: 10px;
-    padding-bottom: 10px;
     background-color: #E2F7D3;
 }
 
@@ -89,7 +88,13 @@ img {
     padding-left: 20px;
   }
 }
-
+ #navbar {
+  background-color:#c8f7ff ;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: -10px;
+  padding-bottom: -10px;
+ }
 
 .navbar .navbar-nav .nav-link {
     font-weight:700,bold;
@@ -97,7 +102,7 @@ img {
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #184d01
+    color: #0084a7;
     
 }
 
@@ -105,16 +110,20 @@ img {
     font-size: 28px;
     font-weight: 700;
     color: #07191d;
+   
+   
 }
 
 /* First thing you see */
 
 #firstpage { 
     background-image: url(https://github.com/Nay-Deen/Resume7complete/blob/main/css/backgroundgif.gif?raw=true);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     
 }
+/* skills carousel */
 
 .carousel-inner {
   max-width: 20%;
@@ -136,6 +145,15 @@ img {
   padding-top: 60px;
 }
 
-.job-title {
-  display:flex
+.Row {
+  display: table;
+  width: 50; /*Optional*/
+  table-layout: fixed; /*Optional*/
+  border-spacing: 30px; /*Optional*/
 }
+.Column {
+  display: table-cell;
+
+}
+
+
