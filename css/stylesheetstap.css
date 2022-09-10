@@ -1,5 +1,6 @@
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=PT+Serif:wght@400;700&display=swap");
+
 /* reference for color etc */
 :root {
   --brand-color: #0084a7;
@@ -15,7 +16,7 @@ body {
   font-family: var(--f-main);
   color: var(--c-body);
   line-height: 1.7;
-  background-color:#E9FDFF;
+  background-color: #E9FDFF;
 }
 
 h1,
@@ -46,17 +47,18 @@ a:hover {
 }
 
 /* img { */
-  /* width: 100%; */
+/* width: 100%; */
 /* } */
 
 .section-padding {
-  padding-top: 30px;
-  padding-bottom: 120px;
+  padding-top: 10px;
+  padding: bottom 3px;
 }
 
 .text-brand {
   color: var(--brand-color);
 }
+
 .section-title {
   max-width: 560px;
   margin: 0 auto 60px auto;
@@ -71,267 +73,235 @@ a:hover {
 
 }
 
-
 /* Navigation bar */
 .navbar {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   transition: var(--transition);
 
 }
-.navbar.scrolled { 
-    background-color: #E2F7D3;
+
+.navbar.scrolled {
+  background-color: #E2F7D3;
 }
 
-@media (min-width: 992px) {
-   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
- #navbar {
-  background-color:#c8f7ff ;
+
+#navbar {
+  background-color: #c8f7ff;
   margin-left: auto;
   margin-right: auto;
   padding-top: -10px;
   padding-bottom: -10px;
- }
+  padding-left: 110px;
+}
 
 .navbar .navbar-nav .nav-link {
-    font-weight:700,bold;
-    color:#034b5a;
+  font-weight: 700, bold;
+  color: #034b5a;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #0084a7;
-    
-    
+  color: #0592b9;
 }
 
 .navbar-brand {
-    font-size: 28px;
-    font-weight: 700;
-    color: #07191d;
-   
-   
+  font-size: 28px;
+  font-weight: 700;
+  color: #0e2f37;
+
 }
 
 /* First thing you see */
 
-#firstpage { 
-    background-image: url(https://github.com/Nay-Deen/Resume7complete/blob/main/css/backgroundgif.gif?raw=true);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
+#firstpage {
+  background-image: url(https://github.com/Nay-Deen/Resume7complete/blob/main/css/backgroundgif.gif?raw=true);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
+
 /* skills carousel */
 
 .carousel-inner {
-  max-width: 20%;
+  max-width: 50%;
   max-height: 10%;
   margin-left: auto;
   margin-right: auto;
- 
- 
+
+
 }
 
 .carousel-container {
-  background-color: #034b5a;
+  background-color: #c8f7ff;
   padding-top: 1%;
   padding-bottom: 1%;
   
+  
+
 }
 
-.container-experience{
-  padding-top: 60px;
+.container-experience {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.Row {
+/* .Row { 
   display: table;
-  width: 50; /*Optional*/
-  table-layout: fixed; /*Optional*/
-  border-spacing: 30px; /*Optional*/
-}
+  width: 50; 
+  table-layout: fixed; 
+  border-spacing: 30px;
+ } */
+ /* Experience column */
 .Column {
   display: table-cell;
+}
 
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+  /* flex-wrap: wrap; */
 }
 
 .card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(3, 14, 236, 0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s; }
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
 }
 
-/* On mouse-over, add a deeper shadow */
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
 
-/* Add some padding inside the card container */
-.container {
-  padding: 30px 30px;
+.title-black {
+  color: black;
 }
 
+.title-black {
+  color: black;
+}
 
-ul {
-  margin: 0px;
-  padding: 0px;
+section{
+  text-align:center;
 }
-.footer-section {
-background: #151414;
-position: relative;
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #0592b9 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
-.footer-cta {
-border-bottom: 1px solid #373636;
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #0592b9 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
 }
-.single-cta i {
-color: #ff5e14;
-font-size: 30px;
-float: left;
-margin-top: 8px;
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
 }
-.cta-text {
-padding-left: 15px;
-display: inline-block;
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
 }
-.cta-text h4 {
-color: #fff;
-font-size: 20px;
-font-weight: 600;
-margin-bottom: 2px;
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background:#0592b9;
 }
-.cta-text span {
-color: #757575;
-font-size: 15px;
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
 }
-.footer-content {
-position: relative;
-z-index: 2;
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
 }
-.footer-pattern img {
-position: absolute;
-top: 0;
-left: 0;
-height: 330px;
-background-size: cover;
-background-position: 100% 100%;
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
 }
-.footer-logo {
-margin-bottom: 30px;
-}
-.footer-logo img {
-  max-width: 200px;
-}
-.footer-text p {
-margin-bottom: 14px;
-font-size: 14px;
-    color: #7e7e7e;
-line-height: 28px;
-}
-.footer-social-icon span {
-color: #fff;
-display: block;
-font-size: 20px;
-font-weight: 700;
-font-family: 'Poppins', sans-serif;
-margin-bottom: 20px;
-}
-.footer-social-icon a {
-color: #fff;
-font-size: 16px;
-margin-right: 15px;
-}
-.footer-social-icon i {
-height: 40px;
-width: 40px;
-text-align: center;
-line-height: 38px;
-border-radius: 50%;
-}
-.facebook-bg{
-background: #3B5998;
-}
-.twitter-bg{
-background: #55ACEE;
-}
-.google-bg{
-background: #DD4B39;
-}
-.footer-widget-heading h3 {
-color: #fff;
-font-size: 20px;
-font-weight: 600;
-margin-bottom: 40px;
-position: relative;
-}
-.footer-widget-heading h3::before {
-content: "";
-position: absolute;
-left: 0;
-bottom: -15px;
-height: 2px;
-width: 50px;
-background: #ff5e14;
-}
-.footer-widget ul li {
-display: inline-block;
-float: left;
-width: 50%;
-margin-bottom: 12px;
-}
-.footer-widget ul li a:hover{
-color: #ff5e14;
-}
-.footer-widget ul li a {
-color: #878787;
-text-transform: capitalize;
-}
-.subscribe-form {
-position: relative;
-overflow: hidden;
-}
-.subscribe-form input {
-width: 100%;
-padding: 14px 28px;
-background: #2E2E2E;
-border: 1px solid #2E2E2E;
-color: #fff;
-}
-.subscribe-form button {
-  position: absolute;
-  right: 0;
-  background: #ff5e14;
-  padding: 13px 20px;
-  border: 1px solid #ff5e14;
-  top: 0;
-}
-.subscribe-form button i {
-color: #fff;
-font-size: 22px;
-transform: rotate(-6deg);
-}
-.copyright-area{
-background: #202020;
-padding: 25px 0;
-}
-.copyright-text p {
-margin: 0;
-font-size: 14px;
-color: #878787;
-}
-.copyright-text p a{
-color: #ff5e14;
-}
-.footer-menu li {
-display: inline-block;
-margin-left: 20px;
-}
-.footer-menu li:hover a{
-color: #ff5e14;
-}
-.footer-menu li a {
-font-size: 14px;
-color: #878787;
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
 }
