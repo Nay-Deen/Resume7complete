@@ -278,6 +278,32 @@ height:100%;
   left:0;
 	background:#0592b9;
 }
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.Row{
+  display: flex;
+}
+/*.phone-icon{
+  display: block;
+  margin-left: 60px;
+  margin-right: 60px;
+  width:50%;
+}
+.linkedin-icon{
+  display: block;
+  margin: left -30px;
+  margin-right: -30px;
+  width:50%;
+}
+.email-icon{
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  width:50%;
+}
 .footer #cont{
   position:relative;
   top:-45px;
@@ -285,7 +311,7 @@ height:100%;
 	width:150px;
 	height:auto;
 	margin:0 auto;
-}
+ } */
 .footer_center{
 	width:500px;
 	float:left;
